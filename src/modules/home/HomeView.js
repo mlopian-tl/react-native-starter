@@ -8,8 +8,9 @@ import {
 
 import { fonts, colors } from '../../styles';
 import { Text } from '../../components/StyledText';
+import { Button } from '../../components/';
 
-export default function HomeScreen({ isExtended, setIsExtended }) {
+export default function HomeScreen({ isExtended, setIsExtended, navigation }) {
   // const rnsUrl = 'https://reactnativestarter.com';
   // const handleClick = () => {
   //   Linking.canOpenURL(rnsUrl).then(supported => {
@@ -29,9 +30,11 @@ export default function HomeScreen({ isExtended, setIsExtended }) {
         resizeMode="cover"
       >
         <View style={styles.section}>
-          <Text size={20} white>
-            Home
-          </Text>
+          <Button
+            secondary
+            caption="transactionlink.io widget"
+            onPress={() => navigation.navigate('Tl Widget')}
+          />
         </View>
         <View style={styles.section}>
           <Text color="#19e7f7" size={15}>

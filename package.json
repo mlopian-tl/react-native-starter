@@ -49,6 +49,7 @@
     "react-native-screens": "^2.5.0",
     "react-native-ui-lib": "^3.39.0",
     "react-native-vector-icons": "^10.0.3",
+    "react-native-webview": "^13.12.3",
     "react-redux": "^6.0.1",
     "recompose": "^0.30.0",
     "redux": "^4.2.1",

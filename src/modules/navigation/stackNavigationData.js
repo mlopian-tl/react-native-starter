@@ -13,6 +13,7 @@ import AvailableInFullVersion from '../../modules/availableInFullVersion/Availab
 // import AuthScreen from '../auth/AuthViewContainer';
 
 import { colors, fonts } from '../../styles';
+import WebViewScreen from '../tl-widget/WebViewScreen';
 
 const headerLeftComponent = (props) => {
   return (
@@ -30,7 +31,7 @@ const headerLeftComponent = (props) => {
           height: 20,
         }}
       />
-    </TouchableOpacity>    
+    </TouchableOpacity>
   )
 }
 
@@ -40,6 +41,17 @@ const StackNavigationData = [
   {
     name: 'React Native Starter',
     component: TabNavigator,
+    headerLeft: null,
+    headerBackground: { source: headerBackground },
+    headerTitleStyle: {
+      fontFamily: fonts.primaryRegular,
+      color: colors.white,
+      fontSize: 18,
+    },
+  },
+  {
+    name: 'Tl Widget',
+    component: WebViewScreen,
     headerLeft: null,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import { 
+import {
   createDrawerNavigator,
   DrawerItem,
   DrawerContentScrollView,
@@ -20,6 +20,10 @@ const iconBlog = require('../../../assets/images/drawer/blog.png')
 const drawerData = [
   {
     name: 'Home',
+    icon: iconHome,
+  },
+  {
+    name: 'Tl Widget',
     icon: iconHome,
   },
   {
@@ -91,7 +95,7 @@ function CustomDrawerContent(props) {
           <View style={styles.menuLabelFlex}>
             <Image
               style={{ width: 20, height: 20}}
-              source={iconSettings} 
+              source={iconSettings}
             />
             <Text style={styles.menuTitle}>Settings</Text>
           </View>
